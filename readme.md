@@ -6,10 +6,10 @@
 
 
 ## Link to Planning Trello Board
-[TELLO BOARD]
+[TELLO BOARD](https://trello.com/invite/b/wsRlKQaU/ATTI36d3e3b3c8365441c7d3dc864fe50feb1E539903/project-2)
 
 
 
 ## Mockups
 
-![linklinklik]()
+![TITLE OF LAYOUT: INSERT IMAGE LINK IN PARENTHESIS]()
