@@ -12,7 +12,7 @@ const { Schema, model } = mongoose // destructuring, grabbing model and Schema o
 const starsSchema = new  Schema({
     name: String,
     age: String,
-    deadOrAlive: Boolean,
+    deceased: Boolean,
     username: String,
 })
 

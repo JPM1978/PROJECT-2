@@ -7,10 +7,10 @@ mongoose.connection.on('open', () => {
 
     // define data we want to put in the database
     const startingFruits =  [
-        { name: "Michael Jackson", age: "51", deadOrAlive: dead },
-        { name: "Whitney Housten", age: "51", deadOrAlive: dead },
-        { name: "Brittany Spears", age: "51", deadOrAlive: alive},
-        { name: "Biggie Smalls", age: "51", deadOrAlive: dead },
+        { name: "Michael Jackson", age: "51", deceased: true },
+        { name: "Whitney Housten", age: "51", deceased: true },
+        { name: "Brittany Spears", age: "51", deceased: false},
+        { name: "Biggie Smalls", age: "51", deceased: true },
 
       ]
       

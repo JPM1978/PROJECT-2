@@ -44,8 +44,8 @@ router.get('/new', (req, res) => {
 
 // create route
 router.post("/", (req, res) => {
-    // check if the deadOrAlive property should be true or false
-    req.body.deadOrAlive = req.body.deadOrAlive === "on" ? true : false;
+    // check if the deceased property should be true or false
+    req.body.deceased = req.body.deceased === "on" ? true : false;
     // add username to req.body to track related user
     req.body.username = req.session.username
     // create the new star
