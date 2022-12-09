@@ -1,4 +1,4 @@
-equire("dotenv").config()  // Load env variables
+require("dotenv").config()  // Load env variables
 const express = require('express') // bring in express to make our app
 const morgan = require('morgan') // nice logger for our request
 const methodOverride = require('method-override') // allows us to override post request from our ejs/forms
@@ -6,7 +6,8 @@ const PORT = process.env.PORT
 const StarRouter = require('./controllers/star')
 const UserRouter = require('./controllers/User');
 const session = require('express-session');
-const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo').default;
+
 const { response } = require("express")
 
 const app = express()
