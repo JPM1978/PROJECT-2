@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %> 
+
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+        <div>
+            <form action="/stars/<%= star._id %>?_method=PUT" method="post" >
+            
+                <fieldset>
+                    <legend>Edit a <%= star.name %></legend>
+                    <label>
+                        NAME: <input 
+                            type="text"
+                            name="name"
+                            value="<%= star.name %>"
+                            placeholder="enter a star name"
+                        />
+                    </label>
+                    <label>
+                        AGE: <input 
+                            type="text"
+                            name="age"
+                            value="<%= star.color %>"
+                            placeholder="enter age"
+                        />
+                    </label>
+                    <label>
+                        DECEASED: <input type="checkbox" name="deceased" <%= star.deceased ? "checked" : "" %> />
+                    </label>
+                </fieldset>
+                <input type="submit" value="Update <%= fruit.name%>" />
+            </form> 
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

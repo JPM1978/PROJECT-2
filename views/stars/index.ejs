@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+
+        <main>
+            <div>
+                <a href="/stars/new"><button>Add a new Star</button></a>
+                <a href="/user/logout"><button>Logout</button></a>
+                <h1>Logged In as: <%= user %> </h1>
+                
+                <% for (star of stars) { %>
+                    <article>
+                        <a href="/stars/<%= star._id %>">
+                            <h2>
+                                <%= star.name %> - <%= star.deceased ? "Deceased" : "Alive" %>
+                            </h2>
+                        </a>
+
+                    </article>
+
+                <% } %> 
+            </div>
+        </main>
+    </body>
+</html>

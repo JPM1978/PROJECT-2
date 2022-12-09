@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+
+    <body>
+        <%- include('../partials/header.ejs') %>
+
+
+        <main>
+            <div>
+              <form action="/stars" method="POST">
+                <fieldset>
+                    <legend>Add a New Star</legend>
+
+                    <label>
+                        NAME: <input type="text" name="name" placeholder="enter a stars name" />
+                    </label>
+                    <label>
+                        AGE: <input type="text" name="age" placeholder="enter age" />
+                    </label>      
+                    <label>
+                        DECEASED: <input type="checkbox" name="deceased" />
+                    </label>    
+                </fieldset>
+                
+                <input type="submit" value="Add a new Star" />
+              </form>        
+
+            </div>
+        </main>
+    </body>
+</html>
