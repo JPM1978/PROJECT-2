@@ -6,7 +6,7 @@ const PORT = process.env.PORT
 const StarRouter = require('./controllers/star')
 const UserRouter = require('./controllers/User');
 const session = require('express-session');
-const MongoStore = require('connect-mongo').default;
+const MongoStore = require('connect-mongo');
 
 const { response } = require("express")
 
