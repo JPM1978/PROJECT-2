@@ -28,12 +28,12 @@ app.use(session({
   }))
 
 
-
-app.use('/stars', StarRouter)
 app.use('/user', UserRouter)
+app.use('/stars', StarRouter)
+
 
 app.get('/', (req, res) => {
-    res.render('index.ejs');
+    res.redirect('/user/signup');
 
 });
 
