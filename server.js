@@ -33,7 +33,7 @@ app.use('/stars', StarRouter)
 
 
 app.get('/', (req, res) => {
-    res.redirect('/user/signup');
+    res.render('index.ejs');
 
 });
 
