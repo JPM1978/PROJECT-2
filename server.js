@@ -28,9 +28,7 @@ app.use(session({
   }))
 
 
-// app.get('/', homeRoutes)
-// app.get('/store', storeRoutes)
-// app.get('/user', userRoutes)
+
 app.use('/stars', StarRouter)
 app.use('/user', UserRouter)
 
