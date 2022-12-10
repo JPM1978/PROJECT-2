@@ -1,5 +1,5 @@
 const express = require('express') // bring this in so we can make our router
-const Fruit = require('../models/star')
+const Star = require('../models/star')
 
 
 /////
@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
     // Get all stars from mongo and send them back
     Star.find({ username: req.session.username } )
     .then((stars) => {
-        // res.json(fruits)
+        // res.json(stars)
         res.render('stars/index.ejs', { stars, user:req.session.username });
     })
     .catch(err => console.log(err))
