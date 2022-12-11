@@ -14,6 +14,7 @@ const starsSchema = new  Schema({
     age: String,
     deceased: Boolean,
     username: String,
+    img: String
 })
 
 const Star = model('Star', starsSchema)
