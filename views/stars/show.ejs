@@ -9,20 +9,13 @@
         <main>
             <div>
                     <article>
-                            <h2>
-                                <%= star.name %> - <%= star.deceased ? "deceased" : "alive" %>
-                            </h2>
-                            <img src="<%= star.img %> " width="100" height="100" />
-                            <h3> <%= star.age %> </h3>
-                            <a href="/stars/<%= star._id %>/edit">
-                               <button>Edit</button>
-                            </a>
-                            <form action="/stars/<%= star._id %>?_method=DELETE" method="POST">
-                                <input type="submit" value="Delete" />
-                            </form>
-                            <a href="/stars/"> 
-                                <button>Back</button>
-                            </a>
+                        <img src="<%= star.img %> " width="100" height="100" />
+                    <h2><%= star.name %> - <%= star.deceased ? "deceased" : "alive" %></h2>
+                    <h3> <%= star.age %> </h3><a href="/stars/<%= star._id %>/edit"><button>Edit</button>
+                    </a><form action="/stars/<%= star._id %>?_method=DELETE" method="POST">
+                        <input type="submit" value="Delete" /></form>
+                    <a href="/stars/"><button>Back</button></a>
+                    
                     </article>
 
             </div>

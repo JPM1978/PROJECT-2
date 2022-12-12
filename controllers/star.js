@@ -67,11 +67,11 @@ router.get('/:id/edit', (req, res) => {
 
 router.put('/:id', (req, res) => {
     
-    req.body.deadOrAlive = req.body.deadOrAlive === 'on' ? true : false
+    req.body.deceased = req.body.deceased === 'on' ? true : false
 
     Star.findByIdAndUpdate(req.params.id, req.body, {new: true},(err, updatedStar) => {
         console.log(updatedStar)
-
+        console.log(err)
         res.redirect(`/stars/${req.params.id}`)
         
     })
