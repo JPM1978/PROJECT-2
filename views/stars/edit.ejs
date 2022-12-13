@@ -12,11 +12,11 @@
         background-position: center center;
         background-attachment: fixed;
         background-size: 100% 100%;
+    }
     </style>      
-  }
 <body>
-    /* <%- include("../partials/header.ejs") %>  */
-    <title>My Stars App: Edit Page</title>
+    <%- include("../partials/header.ejs") %> 
+    <h1>Edit Page</h1>
     <main>
         <div>
             <form action="/stars/<%= star._id %>?_method=PUT" method="post" >
