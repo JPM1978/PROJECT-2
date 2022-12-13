@@ -14,6 +14,29 @@
     background-size: 100% 100%;
     }
 
+    h2 {
+    position: relative;
+    color: whitesmoke;
+    font-style:italic;
+    right: 400px;
+    top: 250px;
+    }
+
+    img {
+        position: relative;
+        border-radius: 50%;
+        top: 150px;
+    }
+    a {
+        position: relative;
+        left: 450px;
+    }
+
+    form {
+        position: relative;
+        left: 450px;
+        top: 13px;
+    }
    
 </style>
     <body>
@@ -23,11 +46,11 @@
         <main>
             <div>
                     <article>
-                        <img src="<%= star.img %> " width="100" height="100" />
-                    <h2><%= "Name:"%> <%= star.name %></h2>
-                    <h2><%= "Status:"%> <%= star.deceased ? "deceased" : "alive" %></h2>
+                        <img src="<%= star.img %> " width="150" height="150" />
+                    <h2 class="info1"><%= "Name:"%> <%= star.name %></h2>
+                    <h2 class="info2"><%= "Status:"%> <%= star.deceased ? "deceased" : "alive" %></h2>
 
-                    <h2><%= "Age:"%> <%= star.age %></h2>
+                    <h2 class="info3"><%= "Age:"%> <%= star.age %></h2>
                     <a href="/stars/<%= star._id %>/edit">
                         <button>Edit</button>
                     </a><form action="/stars/<%= star._id %>?_method=DELETE" method="POST">
