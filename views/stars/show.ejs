@@ -19,23 +19,24 @@
     color: whitesmoke;
     font-style:italic;
     right: 400px;
-    top: 250px;
+    top: 150px;
     }
 
     img {
         position: relative;
         border-radius: 50%;
-        top: 150px;
+        top: 300px;
     }
     a {
         position: relative;
         left: 450px;
+        bottom: 35px;
     }
 
     form {
         position: relative;
         left: 450px;
-        top: 13px;
+        bottom: 23px;
     }
    
 </style>
@@ -46,7 +47,7 @@
         <main>
             <div>
                     <article>
-                        <img src="<%= star.img %> " width="150" height="150" />
+                        <img src="<%= star.img %> " width="200" height="200" />
                     <h2 class="info1"><%= "Name:"%> <%= star.name %></h2>
                     <h2 class="info2"><%= "Status:"%> <%= star.deceased ? "deceased" : "alive" %></h2>
 
